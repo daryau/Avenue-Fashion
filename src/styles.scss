@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+// ressrt style
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+}
+
+a:hover { text-decoration: none; }
+  
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {quotes: none; }
+  
+blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } 
+}
+  
+q {
+    &:before, &:after {
+    content: '';
+    content: none; } 
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+body {  
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+// the end reset
+
+$white: #ffffff;
+h1 {
+    font-size: 48px;
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 30px;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+$gray-solid: #eeeeee;
+$turquoise: #00c8c8;
+
+.f12 { font-size: 12px; }
+.f13 { font-size: 13px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f18 { font-size: 18px; }
+.f24 { font-size: 24px; }
+.f36 { font-size: 36px; }
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.fw600 {font-weight: 600; }
+.fw700 { font-weight: 700; }
+.uppercase { text-transform: uppercase; }
+.c-poiner { cursor: pointer; }
+.block { display: block; }
+.inline {display: inline-block;}
+.margin-bottom-25 {margin-bottom: 25px;} 
+.hr-right {
+    box-shadow: inset -1px 0 0 $gray-solid;
+}
+
+@media screen and (max-width: 991px)  {
+    h1 { font-size: 35px; }
+    h2 { font-size: 20px; }
+    .f36 { font-size: 26px; }
+    .footer {
+        &-news {
+            height: auto !important;
+        }
+        &-social {
+            height: auto;
+            margin-top: 15px;
+            &-list{
+                height: auto !important;
+                width: 100% !important;
+                padding: 80px 50px !important;
+            }
+        }
+        
+    }
+}
+
+.active {
+    color: $turquoise !important;
+}

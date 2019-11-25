@@ -1,0 +1,102 @@
+$light-gray: #f8f8f8;
+$lighter-gray: #575153;
+$gray-bl: #999999;
+$gray: #575153;
+$copyright-links: #777777;
+$dark-gray: #333333;
+$white: #ffffff;
+$turquoise: #00c8c8;
+$gray-footer: #727272;
+
+.footer {
+    background-color: $light-gray;
+    padding: 65px 0 0;
+    &-menu {
+        margin-bottom: 62px;
+        .footer-list {
+            &__item:first-child {
+                line-height: 3.5;
+            }
+            &__item {
+                color: $gray;
+                &__link {
+                    color: $gray-footer;
+                    line-height: 2;
+                }
+            }
+        }
+        .footer-list:nth-child(5) {
+            width: 240px;
+            .footer-list__item:nth-child(2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &-news {
+        height: 200px;
+        box-sizing: border-box;
+        padding: 55px 10px;
+        background-color: $dark-gray;
+        &__title {
+            box-sizing: border-box;
+            color: $white;
+        }
+        &__title:nth-child(1) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-social {
+        box-sizing: border-box;
+        height: 200px;
+        background-color: $turquoise;
+        &-list {
+            width: 300px;
+            margin: auto;
+            padding: 80px 0;
+            &__item {
+                &_link {
+                    transition: 0.2s ease-in;
+                    &:hover { opacity: 0.7; }
+                    .ic-social {
+                        color: $white;
+                        font-size: 36px;
+                    }
+                }
+            }
+        }    
+    }
+
+    .copyright {
+        box-sizing: border-box;
+        margin: 55px 0 0;
+        padding: 18px 0;
+        background-color: $dark-gray;
+        &__title {
+            color: $gray-bl;
+        }
+        &-links {
+            width: 400px;
+            &__title {
+                color: $copyright-links;
+                &__link {
+                    display: inline-block;
+                    color: $copyright-links;
+                }
+            }
+        }
+    }
+    
+}
+
+// media 
+@media screen and (max-width: 991px)  {
+    .footer {
+        &-social {
+            height: auto;
+            margin-top: 15px;
+        }
+    }
+}
+
