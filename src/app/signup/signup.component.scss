@@ -2,10 +2,37 @@ $sign-gray: #575153;
 $turquoise: #00c8c8;
 $white: #ffffff;
 $border-form: #e7e7e7;
+$bg-error: #fcf6f7;
+$border-error: #bb5465;
 
-.w-230 {
-    width: 230px;
+.w-230 {width: 230px;}
+
+.has-error {
+    color: $border-error;
+    margin-top: 5px;
 }
+input.ng-invalid:focus {
+    background-color: $bg-error;
+    border-color: $border-error;
+}
+
+button.myButtonn:active {
+    transition: 0.3s ease-in;
+    box-sizing: border-box;
+    border: 2px solid $sign-gray;
+    background-color: $white;
+    color: $sign-gray;
+    border-radius: 0;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+}
+
+.sign-in-btn__btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
 .sign-in {
     box-sizing: border-box;
     margin: 64px 0 110px;
